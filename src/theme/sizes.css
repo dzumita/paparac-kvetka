@@ -1,0 +1,9 @@
+:root {
+  /* ~~~~ zIndex ~~~~ */
+  --zIndexLevel5: 100000;
+  --zIndexLevel4: 10000;
+  --zIndexLevel3: 1000;
+  --zIndexLevel2: 100;
+  --zIndexLevel1: 10;
+  --zIndexLevel0: 0;
+}
