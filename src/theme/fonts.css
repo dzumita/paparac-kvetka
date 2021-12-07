@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "uni0553";
+  src: url(../assets/uni0553.woff);
+}
+
+:root {
+  --mainFont: "uni0553", serif;
+
+  font-family: var(--mainFont);
+  font-size: 22px;
+}

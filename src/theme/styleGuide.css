@@ -1,4 +1,32 @@
-@font-face {
-  font-family: uni0553;
-  src: url(../assets/uni0553.woff);
+@import url("./palette.css");
+@import url("./colors.css");
+@import url("./sizes.css");
+@import url("./scroll.css");
+@import url("./fonts.css");
+@import url("./effects.css");
+
+/* ~~~~ Mods ~~~~ */
+@import url("./mods/devMode.css");
+@import url("./mods/fullScreenMode.css");
+@import url("./mods/transitionMode.css");
+
+:root {
+  --border: 2px solid var(--activeColor);
+}
+
+*::selection {
+  background: var(--activeColor);
+  color: var(--background);
+}
+
+* {
+  background: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  overflow: hidden;
 }

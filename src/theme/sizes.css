@@ -1,9 +1,33 @@
 :root {
-  /* ~~~~ zIndex ~~~~ */
-  --zIndexLevel5: 100000;
-  --zIndexLevel4: 10000;
-  --zIndexLevel3: 1000;
-  --zIndexLevel2: 100;
-  --zIndexLevel1: 10;
+  --borderRadius: 8px;
+
+  /* ~~~~ Spaces ~~~~ */
+  --spaceMultiplier: 1.4;
+  --spaceLevel0: 0.4rem;
+  --spaceLevel1: calc(var(--spaceLevel0) * var(--spaceMultiplier));
+  --spaceLevel2: calc(var(--spaceLevel1) * var(--spaceMultiplier));
+  --spaceLevel3: calc(var(--spaceLevel2) * var(--spaceMultiplier));
+  --spaceLevel4: calc(var(--spaceLevel3) * var(--spaceMultiplier));
+  --spaceLevel5: calc(var(--spaceLevel4) * var(--spaceMultiplier));
+  --spaceLevel6: calc(var(--spaceLevel5) * var(--spaceMultiplier));
+  --spaceLevel7: calc(var(--spaceLevel6) * var(--spaceMultiplier));
+  --spaceLevel8: calc(var(--spaceLevel7) * var(--spaceMultiplier));
+
+  /* ~~~~ zIndexs ~~~~ */
   --zIndexLevel0: 0;
+  --zIndexLevel1: 10;
+  --zIndexLevel2: 100;
+  --zIndexLevel3: 1000;
+  --zIndexLevel4: 10000;
+
+  /* ~~~~ Heights ~~~~ */
+  --maxHeight: 1280px;
+  --minHeight: 400px;
+
+  /* ~~~~ Widths ~~~~ */
+  --maxWidth: 1280px;
+  --minWidth: 400px;
+
+  font-size: 18px;
+  line-height: 18px;
 }

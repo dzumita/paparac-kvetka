@@ -1,0 +1,5 @@
+:root {
+  --background: var(--Flesh);
+  --fontColor: var(--DarkPurple);
+  --activeColor: var(--DeepRuby);
+}

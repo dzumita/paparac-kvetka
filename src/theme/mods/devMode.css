@@ -1,0 +1,25 @@
+:root {
+  --devBorder: 1px solid var(--TuscanRed);
+}
+
+.devMode {
+  border: var(--devBorder);
+  border-width: 3px;
+  background: var(--MoonstoneBlue) !important;
+}
+
+.devMode *:not(body):not(html) {
+  border: var(--devBorder);
+}
+
+.devMode #gulnya-layout {
+  background: var(--PurpleNavy) !important;
+}
+
+.devMode #gulnya-interface-wrapper {
+  background: var(--MoonstoneBlue) !important;
+}
+
+.devMode #gulnya-interface {
+  background: var(--PurpleNavy) !important;
+}
