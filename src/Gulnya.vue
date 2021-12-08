@@ -5,12 +5,13 @@
       devMode: isDevMode,
       fullScreenMode: isFullScreenMode,
       transitionMode: isTransitionMode,
+      borderlessMode: isBorderlessMode,
     }"
   >
     <div id="gulnya-interface-wrapper">
       <div id="gulnya-interface-scroll">
         <div id="gulnya-interface">
-          <p>Paparac</p>
+          <SkryniaPAKV v-for="(item, index) in Array(4)" :key="index" />
         </div>
       </div>
     </div>
@@ -19,14 +20,17 @@
 
 <script>
 import hotkeys from "hotkeys-js";
+import SkryniaPAKV from "./components/SkryniaPAKV.vue";
 
 export default {
   name: "Gulnya",
+  components: { SkryniaPAKV },
   data() {
     return {
       isDevMode: false,
       isFullScreenMode: false,
       isTransitionMode: true,
+      isBorderlessMode: false,
     };
   },
   methods: {
@@ -39,6 +43,9 @@ export default {
     toggleTransitionMode() {
       this.isTransitionMode = !this.isTransitionMode;
     },
+    toggleBorderlessMode() {
+      this.isBorderlessMode = !this.isBorderlessMode;
+    },
   },
   mounted() {
     hotkeys("p+d", () => {
@@ -49,6 +56,9 @@ export default {
     });
     hotkeys("p+t", () => {
       this.toggleTransitionMode();
+    });
+    hotkeys("p+b", () => {
+      this.toggleBorderlessMode();
     });
   },
 };
@@ -100,11 +110,15 @@ export default {
 #gulnya-interface {
   height: 100%;
   width: 100%;
-  max-width: var(--maxWidth);
+  max-width: 100%;
   min-width: var(--minWidth);
   min-height: var(--minHeight);
-  max-height: var(--maxHeight);
-  padding-right: var(--spaceLevel1);
-  padding-bottom: var(--spaceLevel1);
+  max-height: 100%;
+  padding: var(--spaceLevel1);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: var(--spaceLevel1);
 }
 </style>

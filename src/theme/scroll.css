@@ -1,6 +1,7 @@
 *::-webkit-scrollbar {
   background-color: transparent;
   width: var(--borderRadius);
+  height: var(--borderRadius);
 }
 
 *::-webkit-scrollbar-thumb {

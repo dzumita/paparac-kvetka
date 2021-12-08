@@ -5,7 +5,13 @@
 
 :root {
   --mainFont: "uni0553", serif;
+  --fontSizeMultiplier: 1.4;
+  --fontSizeLevel0: 0.8rem;
+  --fontSizeLevel1: calc(var(--fontSizeLevel0) * var(--fontSizeMultiplier));
+  --fontSizeLevel2: calc(var(--fontSizeLevel1) * var(--fontSizeMultiplier));
+  --fontSizeLevel3: calc(var(--fontSizeLevel2) * var(--fontSizeMultiplier));
 
   font-family: var(--mainFont);
-  font-size: 22px;
+  font-size: 20px;
+  line-height: 20px;
 }

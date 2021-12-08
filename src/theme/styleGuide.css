@@ -4,11 +4,13 @@
 @import url("./scroll.css");
 @import url("./fonts.css");
 @import url("./effects.css");
+@import url("./media.css");
 
 /* ~~~~ Mods ~~~~ */
 @import url("./mods/devMode.css");
 @import url("./mods/fullScreenMode.css");
 @import url("./mods/transitionMode.css");
+@import url("./mods/borderlessMode.css");
 
 :root {
   --border: 2px solid var(--activeColor);
