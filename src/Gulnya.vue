@@ -10,8 +10,11 @@
   >
     <div id="gulnya-interface-wrapper">
       <div id="gulnya-interface-scroll">
-        <div id="gulnya-interface">
-          <SkryniaPAKV v-for="(item, index) in Array(4)" :key="index" />
+        <div id="gulnya-global-interface">
+          <div id="gulnya-dynamic-interface">
+            <SkryniaPAKV v-for="(item, index) in Array(4)" :key="index" />
+          </div>
+          <div id="gulnya-static-interface"><MenuPAKV /></div>
         </div>
       </div>
     </div>
@@ -21,10 +24,11 @@
 <script>
 import hotkeys from "hotkeys-js";
 import SkryniaPAKV from "./components/SkryniaPAKV.vue";
+import MenuPAKV from "./components/MenuPAKV.vue";
 
 export default {
   name: "Gulnya",
-  components: { SkryniaPAKV },
+  components: { SkryniaPAKV, MenuPAKV },
   data() {
     return {
       isDevMode: false,
@@ -107,18 +111,29 @@ export default {
   max-width: var(--maxWidth);
 }
 
-#gulnya-interface {
+#gulnya-global-interface {
   height: 100%;
   width: 100%;
   max-width: 100%;
   min-width: var(--minWidth);
-  min-height: var(--minHeight);
   max-height: 100%;
   padding: var(--spaceLevel1);
 
   display: grid;
+  grid-template-rows: calc(100% - 50px) 50px;
+  gap: var(--spaceLevel1);
+}
+
+#gulnya-dynamic-interface {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: var(--spaceLevel1);
+}
+
+#gulnya-static-interface {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 </style>
