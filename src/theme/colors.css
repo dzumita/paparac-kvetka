@@ -1,5 +1,9 @@
 :root {
-  --background: var(--Flesh);
+  --layoutBackground: var(--LightDesertSand);
+  --sectionBackground: var(--Flesh);
   --fontColor: var(--DarkPurple);
   --activeColor: var(--DeepRuby);
+  --emptyColor: var(--Onyx);
+  --ironColor: var(--PurpleNavy);
+  --materialColor: var(--ChinaRose);
 }

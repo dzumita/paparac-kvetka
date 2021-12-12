@@ -22,9 +22,15 @@
 
   /* ~~~~ Heights ~~~~ */
   --maxHeight: 1280px;
-  --minHeight: 400px;
+  --minHeight: 332px;
 
   /* ~~~~ Widths ~~~~ */
   --maxWidth: 1280px;
-  --minWidth: 280px;
+  --minWidth: 232px;
+
+  /* ~~~~ Scroll ~~~~ */
+  --scrollHeight: 4px;
+  --scrollWidth: 4px;
+
+  --skladnikSize: 2.2rem;
 }

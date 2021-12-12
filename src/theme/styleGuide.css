@@ -10,7 +10,6 @@
 @import url("./mods/devMode.css");
 @import url("./mods/fullScreenMode.css");
 @import url("./mods/transitionMode.css");
-@import url("./mods/borderlessMode.css");
 
 :root {
   --border: 2px solid var(--activeColor);
